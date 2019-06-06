@@ -1,0 +1,164 @@
+object ComSetupFrm: TComSetupFrm
+  Left = 381
+  Height = 272
+  Top = 182
+  Width = 231
+  HorzScrollBar.Page = 230
+  VertScrollBar.Page = 271
+  ActiveControl = Button1
+  BorderStyle = bsDialog
+  Caption = 'Setup'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  object Button1: TButton
+    Left = 70
+    Height = 25
+    Top = 232
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 150
+    Height = 25
+    Top = 232
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 209
+    Top = 8
+    Width = 217
+    Caption = ' Settings '
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Height = 14
+      Top = 24
+      Width = 21
+      Caption = 'Port'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 8
+      Height = 14
+      Top = 48
+      Width = 48
+      Caption = 'Baud rate'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 14
+      Top = 72
+      Width = 44
+      Caption = 'Data bits'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 8
+      Height = 14
+      Top = 96
+      Width = 43
+      Caption = 'Stop bits'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 8
+      Height = 14
+      Top = 120
+      Width = 29
+      Caption = 'Parity'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 8
+      Height = 14
+      Top = 144
+      Width = 59
+      Caption = 'Flow control'
+      Color = clNone
+      ParentColor = False
+    end
+    object ComComboBox1: TComComboBox
+      Left = 94
+      Height = 21
+      Top = 24
+      Width = 100
+      TabStop = True
+      ComProperty = cpPort
+      Style = csDropDownList
+      ParentColor = False
+      TabOrder = 0
+    end
+    object ComComboBox2: TComComboBox
+      Left = 94
+      Height = 21
+      Top = 48
+      Width = 100
+      TabStop = True
+      ComProperty = cpBaudRate
+      Style = csDropDownList
+      ParentColor = False
+      TabOrder = 1
+    end
+    object ComComboBox3: TComComboBox
+      Left = 94
+      Height = 21
+      Top = 72
+      Width = 100
+      TabStop = True
+      ComProperty = cpDataBits
+      Style = csDropDownList
+      ParentColor = False
+      TabOrder = 2
+    end
+    object ComComboBox4: TComComboBox
+      Left = 94
+      Height = 21
+      Top = 96
+      Width = 100
+      TabStop = True
+      ComProperty = cpStopBits
+      Style = csDropDownList
+      ParentColor = False
+      TabOrder = 3
+    end
+    object ComComboBox5: TComComboBox
+      Left = 94
+      Height = 21
+      Top = 120
+      Width = 100
+      TabStop = True
+      ComProperty = cpParity
+      Style = csDropDownList
+      ParentColor = False
+      TabOrder = 4
+    end
+    object ComComboBox6: TComComboBox
+      Left = 94
+      Height = 21
+      Top = 144
+      Width = 100
+      TabStop = True
+      ComProperty = cpFlowControl
+      Style = csDropDownList
+      ParentColor = False
+      TabOrder = 5
+    end
+  end
+end

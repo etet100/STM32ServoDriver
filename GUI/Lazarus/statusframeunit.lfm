@@ -1,0 +1,336 @@
+object StatusFrame: TStatusFrame
+  Left = 0
+  Height = 178
+  Top = 0
+  Width = 288
+  ClientHeight = 178
+  ClientWidth = 288
+  TabOrder = 0
+  DesignLeft = 476
+  DesignTop = 119
+  object GroupBoxStatus: TGroupBox
+    Left = 0
+    Height = 175
+    Top = 0
+    Width = 283
+    Caption = 'Status'
+    ClientHeight = 155
+    ClientWidth = 279
+    TabOrder = 0
+    object Label6: TLabel
+      Left = 10
+      Height = 13
+      Top = 5
+      Width = 47
+      Caption = 'Enabled:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object StatusEnabled: TLabel
+      Left = 96
+      Height = 15
+      Top = 5
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label8: TLabel
+      Left = 10
+      Height = 13
+      Top = 21
+      Width = 31
+      Caption = 'Error:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object StatusError: TLabel
+      Left = 96
+      Height = 15
+      Top = 21
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label10: TLabel
+      Left = 10
+      Height = 13
+      Top = 37
+      Width = 39
+      Caption = 'Error I:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbStatusErrorI: TLabel
+      Left = 96
+      Height = 15
+      Top = 37
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label12: TLabel
+      Left = 10
+      Height = 13
+      Top = 53
+      Width = 42
+      Caption = 'Error D:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbStatusErrorD: TLabel
+      Left = 96
+      Height = 15
+      Top = 53
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label14: TLabel
+      Left = 10
+      Height = 13
+      Top = 69
+      Width = 48
+      Caption = 'Encoder:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object StatusEncoder: TLabel
+      Left = 96
+      Height = 15
+      Top = 69
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label16: TLabel
+      Left = 10
+      Height = 13
+      Top = 85
+      Width = 60
+      Caption = 'Command:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object StatusCommand: TLabel
+      Left = 96
+      Height = 15
+      Top = 85
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label18: TLabel
+      Left = 10
+      Height = 13
+      Top = 101
+      Width = 42
+      Caption = 'Output:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbStatusOutput: TLabel
+      Left = 96
+      Height = 15
+      Top = 101
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label20: TLabel
+      Left = 10
+      Height = 13
+      Top = 133
+      Width = 71
+      Caption = 'Out. Limited:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbStatusOutputLimited: TLabel
+      Left = 96
+      Height = 15
+      Top = 117
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label40: TLabel
+      Left = 10
+      Height = 13
+      Top = 117
+      Width = 51
+      Caption = 'Test Osc:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbStatusTestOsc: TLabel
+      Left = 96
+      Height = 15
+      Top = 133
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label45: TLabel
+      Left = 138
+      Height = 13
+      Top = 5
+      Width = 32
+      Caption = 'Flags:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbStatusFlags: TLabel
+      Left = 224
+      Height = 15
+      Top = 5
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label49: TLabel
+      Left = 138
+      Height = 13
+      Top = 21
+      Width = 54
+      Caption = 'PID Time:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbStatusPidTime: TLabel
+      Left = 224
+      Height = 15
+      Top = 21
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label51: TLabel
+      Left = 138
+      Height = 13
+      Top = 37
+      Width = 46
+      Caption = 'Current:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbStatusCurrent: TLabel
+      Left = 224
+      Height = 15
+      Top = 37
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object StatusMaxError: TLabel
+      Left = 224
+      Height = 15
+      Top = 53
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label52: TLabel
+      Left = 138
+      Height = 13
+      Top = 53
+      Width = 59
+      Caption = 'Max error:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label53: TLabel
+      Left = 138
+      Height = 13
+      Top = 68
+      Width = 68
+      Caption = 'Max output:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object StatusMaxOutput: TLabel
+      Left = 224
+      Height = 15
+      Top = 68
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+    object Label54: TLabel
+      Left = 138
+      Height = 13
+      Top = 85
+      Width = 66
+      Caption = 'Last status:'
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object StatusLast: TLabel
+      Left = 224
+      Height = 15
+      Top = 85
+      Width = 22
+      Caption = 'N/D'
+      ParentColor = False
+    end
+  end
+end

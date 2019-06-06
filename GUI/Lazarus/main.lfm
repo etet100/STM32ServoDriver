@@ -1,0 +1,1073 @@
+object MainForm: TMainForm
+  Left = 353
+  Height = 648
+  Top = 222
+  Width = 1119
+  Caption = 'STM32ServoDriver'
+  ClientHeight = 628
+  ClientWidth = 1119
+  Color = clBtnFace
+  Constraints.MaxWidth = 1119
+  Constraints.MinWidth = 1119
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Menu = MainMenu
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.2.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 33
+    Top = 0
+    Width = 1119
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 33
+    ClientWidth = 1119
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 10
+      Height = 13
+      Top = 7
+      Width = 24
+      Caption = 'Port:'
+      ParentColor = False
+    end
+    object SelectPort: TComboBox
+      Left = 46
+      Height = 21
+      Top = 4
+      Width = 65
+      ItemHeight = 13
+      ItemIndex = 0
+      Items.Strings = (
+        'COM1'
+        'COM2'
+        'COM3'
+        'COM4'
+        'COM5'
+        'COM6'
+        'COM7'
+        'COM8'
+        'COM9'
+        'COM10'
+        'COM11'
+        'COM12'
+        'COM13'
+        'COM14'
+        'COM15'
+        'COM16'
+        'COM17'
+        'COM18'
+        'COM19'
+        'COM20'
+        'COM21'
+        'COM22'
+        'COM23'
+        'COM24'
+        'COM25'
+        'COM26'
+        'COM27'
+        'COM28'
+        'COM29'
+        'COM30'
+        'COM31'
+        'COM32'
+      )
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'COM1'
+    end
+    object Connect: TButton
+      Left = 172
+      Height = 23
+      Top = 2
+      Width = 63
+      Caption = 'Connect'
+      OnClick = ConnectClick
+      TabOrder = 1
+    end
+    object Disconnect: TButton
+      Left = 240
+      Height = 23
+      Top = 2
+      Width = 63
+      Caption = 'Disconnect'
+      OnClick = DisconnectClick
+      TabOrder = 2
+    end
+    object Button1: TButton
+      Left = 117
+      Height = 25
+      Top = 2
+      Width = 32
+      Caption = 'Upd.'
+      OnClick = Button1Click
+      TabOrder = 3
+    end
+    object Reset: TButton
+      Left = 1032
+      Height = 27
+      Top = 4
+      Width = 75
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 10
+      Caption = 'Reset'
+      OnClick = ResetClick
+      TabOrder = 4
+    end
+    object Error: TPanel
+      AnchorSideRight.Control = Reset
+      Left = 984
+      Height = 25
+      Top = 4
+      Width = 38
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Right = 10
+      BevelOuter = bvNone
+      Caption = 'ERR'
+      Color = clRed
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 5
+    end
+  end
+  object MainTabs: TPageControl
+    Left = 0
+    Height = 450
+    Top = 33
+    Width = 1119
+    ActivePage = TabManager
+    Align = alTop
+    Constraints.MinHeight = 450
+    Constraints.MinWidth = 780
+    TabIndex = 0
+    TabOrder = 1
+    OnChange = MainTabsChange
+    object TabManager: TTabSheet
+      Caption = 'Manager'
+      ClientHeight = 424
+      ClientWidth = 1111
+      ImageIndex = 1
+      object PanelTop: TPanel
+        Left = 0
+        Height = 188
+        Top = 0
+        Width = 1111
+        Align = alTop
+        BevelOuter = bvNone
+        ClientHeight = 188
+        ClientWidth = 1111
+        TabOrder = 0
+        object GroupBoxSampling: TGroupBox
+          Left = 6
+          Height = 50
+          Top = 6
+          Width = 169
+          Caption = 'Sampling'
+          ClientHeight = 32
+          ClientWidth = 165
+          TabOrder = 0
+          object Label7: TLabel
+            Left = 10
+            Height = 13
+            Top = 9
+            Width = 27
+            Caption = 'Rate:'
+            ParentColor = False
+          end
+          object SamplingStartStop: TButton
+            Left = 104
+            Height = 24
+            Top = 4
+            Width = 53
+            Caption = 'Start/Stop'
+            OnClick = SamplingStartStopClick
+            TabOrder = 0
+          end
+          object SamplingPerSecond: TSpinEdit
+            Left = 48
+            Height = 21
+            Top = 5
+            Width = 51
+            Increment = 5
+            MaxValue = 1500
+            MinValue = 1
+            TabOrder = 1
+            Value = 100
+          end
+        end
+        object GroupBoxStep: TGroupBox
+          Left = 472
+          Height = 175
+          Top = 6
+          Width = 117
+          Caption = 'Step input response'
+          ClientHeight = 157
+          ClientWidth = 113
+          TabOrder = 1
+          object Label11: TLabel
+            Left = 8
+            Height = 13
+            Top = 5
+            Width = 75
+            Caption = 'Command step:'
+            ParentColor = False
+          end
+          object Label13: TLabel
+            Left = 8
+            Height = 13
+            Top = 79
+            Width = 23
+            Caption = 'Skip:'
+            ParentColor = False
+          end
+          object cbSIAutoFwdRev: TCheckBox
+            Left = 8
+            Height = 19
+            Top = 56
+            Width = 86
+            Alignment = taLeftJustify
+            Caption = 'auto Fw/Rev:'
+            TabOrder = 0
+          end
+          object seSICommandStep: TSpinEdit
+            Left = 8
+            Height = 21
+            Top = 28
+            Width = 96
+            MaxValue = 1000
+            MinValue = -1000
+            TabOrder = 1
+            Value = 100
+          end
+          object seSkipSamples: TSpinEdit
+            Left = 8
+            Height = 21
+            Top = 96
+            Width = 45
+            MaxValue = 500
+            TabOrder = 2
+            Value = 25
+          end
+          object LaunchStepResponseTest: TButton
+            Left = 8
+            Height = 25
+            Top = 126
+            Width = 97
+            Caption = 'GO!'
+            OnClick = LaunchStepResponseTestClick
+            TabOrder = 3
+          end
+          object Label32: TLabel
+            Left = 62
+            Height = 13
+            Top = 79
+            Width = 43
+            Caption = 'Samples:'
+            ParentColor = False
+          end
+          object seSamples: TSpinEdit
+            Left = 60
+            Height = 21
+            Top = 96
+            Width = 45
+            MaxValue = 5000
+            TabOrder = 4
+            Value = 150
+          end
+        end
+        object GroupBoxTuning: TGroupBox
+          Left = 596
+          Height = 175
+          Top = 6
+          Width = 468
+          Caption = 'Tuning'
+          ClientHeight = 157
+          ClientWidth = 464
+          TabOrder = 2
+          object ParametersPLabel: TLabel
+            Left = 16
+            Height = 13
+            Top = 12
+            Width = 10
+            Alignment = taRightJustify
+            Caption = 'P:'
+            ParentColor = False
+          end
+          object ParametersILabel: TLabel
+            Left = 112
+            Height = 13
+            Top = 12
+            Width = 8
+            Alignment = taRightJustify
+            Caption = 'I:'
+            ParentColor = False
+          end
+          object ParametersDLabel: TLabel
+            Left = 208
+            Height = 13
+            Top = 13
+            Width = 11
+            Alignment = taRightJustify
+            Caption = 'D:'
+            ParentColor = False
+          end
+          object ParametersDeadbandLabel: TLabel
+            Left = 16
+            Height = 13
+            Hint = 'Pulses'
+            Top = 96
+            Width = 70
+            Alignment = taRightJustify
+            Caption = 'Deadband (b):'
+            ParentColor = False
+          end
+          object ParametersMaxOutputLabel: TLabel
+            Left = 305
+            Height = 13
+            Hint = '%'
+            Top = 13
+            Width = 61
+            Alignment = taRightJustify
+            Caption = 'Max Output:'
+            ParentColor = False
+          end
+          object ParametersFF0Label: TLabel
+            Left = 17
+            Height = 13
+            Top = 40
+            Width = 22
+            Alignment = taRightJustify
+            Caption = 'FF0:'
+            ParentColor = False
+          end
+          object ParametersFF1Label: TLabel
+            Left = 128
+            Height = 13
+            Top = 40
+            Width = 22
+            Alignment = taRightJustify
+            Caption = 'FF1:'
+            ParentColor = False
+          end
+          object ParametersFaultErrorLabel: TLabel
+            Left = 239
+            Height = 13
+            Hint = 'Pulses'
+            Top = 40
+            Width = 55
+            Alignment = taRightJustify
+            Caption = 'Fault Error:'
+            ParentColor = False
+          end
+          object ParametersStepMultiplierLabel: TLabel
+            Left = 176
+            Height = 13
+            Top = 96
+            Width = 88
+            Alignment = taRightJustify
+            Caption = 'Step multiplier (x):'
+            ParentColor = False
+          end
+          object ParametersP: TAdvSpinEdit
+            AnchorSideLeft.Control = ParametersPLabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersPLabel
+            AnchorSideTop.Side = asrCenter
+            Left = 31
+            Height = 21
+            Top = 8
+            Width = 70
+            AutoSelect = False
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 0
+            MinValue = 0
+            NullValue = 0
+            Value = 0
+            IntValue = 0
+          end
+          object ParametersI: TAdvSpinEdit
+            AnchorSideLeft.Control = ParametersILabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersILabel
+            AnchorSideTop.Side = asrCenter
+            Left = 125
+            Height = 21
+            Top = 8
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 1
+            OnChange = ParametersIChange
+            Increment = 0.01
+            MinValue = 0
+            NullValue = 0
+            Value = 0
+            IntValue = 0
+          end
+          object ParametersD: TAdvSpinEdit
+            AnchorSideLeft.Control = ParametersDLabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersDLabel
+            AnchorSideTop.Side = asrCenter
+            Left = 224
+            Height = 21
+            Top = 9
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 2
+            Increment = 0.1
+            MinValue = 0
+            NullValue = 0
+            Value = 0
+            IntValue = 0
+          end
+          object ParametersFF0: TAdvSpinEdit
+            AnchorSideLeft.Control = ParametersFF0Label
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersFF0Label
+            AnchorSideTop.Side = asrCenter
+            Left = 44
+            Height = 21
+            Top = 36
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 3
+            Increment = 0.1
+            MinValue = 0
+            NullValue = 0
+            Value = 0
+            IntValue = 0
+          end
+          object ParametersFF1: TAdvSpinEdit
+            AnchorSideLeft.Control = ParametersFF1Label
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersFF1Label
+            AnchorSideTop.Side = asrCenter
+            Left = 155
+            Height = 21
+            Top = 36
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 4
+            Increment = 0.1
+            MinValue = 0
+            NullValue = 0
+            Value = 0
+            IntValue = 0
+          end
+          object btWriteBoardParams: TButton
+            Left = 216
+            Height = 25
+            Top = 126
+            Width = 80
+            Caption = 'To flash'
+            TabOrder = 5
+          end
+          object ReadSettingsFromDriver: TButton
+            Left = 8
+            Height = 25
+            Top = 126
+            Width = 80
+            Caption = 'Read'
+            OnClick = ReadSettingsFromDriverClick
+            TabOrder = 6
+          end
+          object WriteSettingsToDriver: TButton
+            Left = 103
+            Height = 25
+            Top = 126
+            Width = 80
+            Caption = 'Write'
+            OnClick = WriteSettingsToDriverClick
+            TabOrder = 7
+          end
+          object ParametersKSDLabel: TLabel
+            Left = 16
+            Height = 13
+            Top = 68
+            Width = 23
+            Alignment = taRightJustify
+            Caption = 'KSD:'
+            ParentColor = False
+          end
+          object ParametersKSD: TAdvSpinEdit
+            AnchorSideLeft.Control = ParametersKSDLabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersKSDLabel
+            AnchorSideTop.Side = asrCenter
+            Left = 44
+            Height = 21
+            Top = 64
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 8
+            Increment = 0.1
+            MinValue = 0
+            NullValue = 0
+            Value = 0
+            IntValue = 0
+          end
+          object ParametersKSDLabel1: TLabel
+            Left = 128
+            Height = 13
+            Top = 68
+            Width = 27
+            Alignment = taRightJustify
+            Caption = 'KSDI:'
+            ParentColor = False
+          end
+          object ParametersKSDI: TAdvSpinEdit
+            AnchorSideLeft.Control = ParametersKSDLabel1
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersKSDLabel1
+            AnchorSideTop.Side = asrCenter
+            Left = 160
+            Height = 21
+            Top = 64
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 9
+            Increment = 0.1
+            MinValue = 0
+            NullValue = 0
+            Value = 0
+            IntValue = 0
+          end
+          object ParametersKDI: TAdvSpinEdit
+            AnchorSideLeft.Control = ParametersKDILabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersKDILabel
+            AnchorSideTop.Side = asrCenter
+            Left = 280
+            Height = 21
+            Top = 64
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 10
+            Increment = 0.1
+            MinValue = 0
+            NullValue = 0
+            Value = 0
+            IntValue = 0
+          end
+          object ParametersKDILabel: TLabel
+            Left = 254
+            Height = 13
+            Top = 68
+            Width = 21
+            Alignment = taRightJustify
+            Caption = 'KDI:'
+            ParentColor = False
+          end
+          object ParametersDeadband: TSpinEditEx
+            AnchorSideLeft.Control = ParametersDeadbandLabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersDeadbandLabel
+            AnchorSideTop.Side = asrCenter
+            Left = 91
+            Height = 21
+            Hint = 'Pulses'
+            Top = 92
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 11
+          end
+          object ParametersStepMultiplier: TSpinEditEx
+            AnchorSideLeft.Control = ParametersStepMultiplierLabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersStepMultiplierLabel
+            AnchorSideTop.Side = asrCenter
+            Left = 269
+            Height = 21
+            Top = 92
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 12
+          end
+          object ParametersMaxOutput: TSpinEditEx
+            AnchorSideLeft.Control = ParametersMaxOutputLabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersMaxOutputLabel
+            AnchorSideTop.Side = asrCenter
+            Left = 371
+            Height = 21
+            Hint = '%'
+            Top = 9
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 13
+            Increment = 5
+            MinValue = 5
+            Value = 5
+          end
+          object ParametersFaultError: TSpinEditEx
+            AnchorSideLeft.Control = ParametersFaultErrorLabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ParametersFaultErrorLabel
+            AnchorSideTop.Side = asrCenter
+            Left = 299
+            Height = 21
+            Hint = 'Pulses'
+            Top = 36
+            Width = 70
+            BorderSpacing.Left = 5
+            MaxLength = 0
+            TabOrder = 14
+            Increment = 25
+            MaxValue = 2000
+            MinValue = 25
+            Value = 25
+          end
+          object WriteSettingsToDriverAuto: TCheckBox
+            AnchorSideLeft.Control = WriteSettingsToDriver
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = WriteSettingsToDriver
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = WriteSettingsToDriver
+            Left = 187
+            Height = 19
+            Top = 129
+            Width = 20
+            BorderSpacing.Left = 4
+            OnChange = WriteSettingsToDriverAutoChange
+            TabOrder = 15
+          end
+        end
+        object GroupBoxSampling1: TGroupBox
+          Left = 6
+          Height = 125
+          Top = 56
+          Width = 169
+          Caption = 'Alt. modes'
+          ClientHeight = 107
+          ClientWidth = 165
+          TabOrder = 3
+          object AltModeParamLabel: TLabel
+            Left = 8
+            Height = 13
+            Top = 40
+            Width = 27
+            Caption = 'Rate:'
+            Enabled = False
+            ParentColor = False
+          end
+          object AltModeSet: TButton
+            Left = 118
+            Height = 21
+            Top = 35
+            Width = 37
+            Caption = 'Set'
+            OnClick = AltModeSetClick
+            TabOrder = 0
+          end
+          object AltModeParam: TSpinEdit
+            Left = 40
+            Height = 21
+            Top = 35
+            Width = 72
+            Enabled = False
+            Increment = 5
+            MaxValue = 1500
+            MinValue = 1
+            TabOrder = 1
+            Value = 100
+          end
+          object AltModeMode: TComboBox
+            Left = 8
+            Height = 21
+            Top = 7
+            Width = 147
+            ItemHeight = 13
+            ItemIndex = 0
+            Items.Strings = (
+              'Position'
+              'Velocity'
+              'PWM'
+            )
+            OnChange = AltModeModeChange
+            TabOrder = 2
+            Text = 'Position'
+          end
+        end
+        inline StatusFrame_: TStatusFrame
+          Left = 182
+          Top = 6
+          TabOrder = 4
+          inherited GroupBoxStatus: TGroupBox
+            ClientHeight = 157
+            inherited StatusEnabled: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited StatusError: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited lbStatusErrorI: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited lbStatusErrorD: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited StatusEncoder: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited StatusCommand: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited lbStatusOutput: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited lbStatusOutputLimited: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited lbStatusTestOsc: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited lbStatusFlags: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited lbStatusPidTime: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited lbStatusCurrent: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited StatusMaxError: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited StatusMaxOutput: TLabel
+              Height = 13
+              Width = 18
+            end
+            inherited StatusLast: TLabel
+              Height = 13
+              Width = 18
+            end
+          end
+        end
+      end
+      object PanelChart: TPanel
+        Left = 0
+        Height = 236
+        Top = 188
+        Width = 1111
+        Align = alClient
+        BevelOuter = bvNone
+        ClientHeight = 236
+        ClientWidth = 1111
+        TabOrder = 1
+        object Chart: TChart
+          Left = 0
+          Height = 236
+          Top = 0
+          Width = 1111
+          AntialiasingMode = amOn
+          AxisList = <          
+            item
+              Marks.LabelBrush.Style = bsClear
+              Minors = <>
+              Title.LabelFont.Orientation = 900
+              Title.Caption = 'Value'
+              Title.LabelBrush.Style = bsClear
+            end          
+            item
+              Alignment = calBottom
+              Marks.LabelBrush.Style = bsClear
+              Minors = <>
+              Title.Caption = 'Time (points)'
+              Title.LabelBrush.Style = bsClear
+            end>
+          Extent.UseYMax = True
+          Extent.UseYMin = True
+          Extent.YMax = 300
+          Extent.YMin = -300
+          Foot.Brush.Color = clBtnFace
+          Foot.Font.Color = clBlue
+          Legend.Alignment = laBottomCenter
+          Legend.BackgroundBrush.Color = clInfoBk
+          Legend.ColumnCount = 3
+          Legend.Visible = True
+          Title.Brush.Color = clBtnFace
+          Title.Font.Color = clBlue
+          Title.Text.Strings = (
+            'TChart'
+          )
+          Align = alClient
+          Color = clWhite
+          DoubleBuffered = True
+          object SeriesError: TLineSeries
+            Marks.Visible = False
+            Marks.Arrow.Visible = True
+            Title = 'Error'
+            LinePen.Color = 10708548
+            LinePen.Width = 2
+          end
+          object SeriesOutput: TLineSeries
+            Marks.Visible = False
+            Marks.Arrow.Visible = True
+            Title = 'Output'
+            LinePen.Color = 3513587
+            LinePen.Width = 2
+          end
+          object SeriesCurrent: TLineSeries
+            Marks.Visible = False
+            Marks.Arrow.Visible = True
+            Title = 'Current'
+            LinePen.Color = clPurple
+            LinePen.Width = 2
+          end
+        end
+        object ChartLimitSamples: TSpinEdit
+          AnchorSideBottom.Side = asrBottom
+          Left = 4
+          Height = 21
+          Top = 208
+          Width = 64
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Left = 20
+          BorderSpacing.Bottom = 15
+          BorderSpacing.CellAlignHorizontal = ccaLeftTop
+          Increment = 25
+          MaxValue = 1000
+          MinValue = 50
+          TabOrder = 1
+          Value = 200
+        end
+        object StaticText1: TStaticText
+          Left = 72
+          Height = 14
+          Top = 212
+          Width = 59
+          Anchors = [akLeft, akBottom]
+          AutoSize = True
+          Caption = 'samples limit'
+          Color = clGray
+          DoubleBuffered = False
+          ParentColor = False
+          ParentDoubleBuffered = False
+          TabOrder = 2
+        end
+        object ClearChart: TButton
+          Left = 152
+          Height = 21
+          Top = 208
+          Width = 75
+          Caption = 'ClearChart'
+          OnClick = ClearChartClick
+          TabOrder = 3
+        end
+      end
+    end
+    object TabLog: TTabSheet
+      Caption = 'Log'
+      ImageIndex = 2
+    end
+  end
+  object PanelLogCommand: TPanel
+    Left = 0
+    Height = 145
+    Top = 483
+    Width = 1119
+    Align = alClient
+    ClientHeight = 145
+    ClientWidth = 1119
+    Constraints.MinHeight = 100
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 654
+      Height = 13
+      Top = 23
+      Width = 53
+      Caption = 'from driver'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 654
+      Height = 13
+      Top = 42
+      Width = 41
+      Caption = 'to driver'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 654
+      Height = 13
+      Top = 61
+      Width = 71
+      Caption = 'local messages'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 626
+      Height = 13
+      Top = 4
+      Width = 72
+      Caption = 'RS232 logging:'
+      ParentColor = False
+    end
+    object Panel3: TPanel
+      Left = 626
+      Height = 17
+      Top = 23
+      Width = 17
+      Color = clBlue
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 0
+    end
+    object Panel4: TPanel
+      Left = 626
+      Height = 17
+      Top = 42
+      Width = 17
+      Color = clGreen
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 1
+    end
+    object Panel5: TPanel
+      Left = 626
+      Height = 17
+      Top = 61
+      Width = 17
+      Color = clRed
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 2
+    end
+    object ClearLog: TButton
+      Left = 726
+      Height = 19
+      Top = 4
+      Width = 37
+      Caption = 'Clear'
+      OnClick = ClearLogClick
+      TabOrder = 3
+    end
+    object Panel7: TPanel
+      Left = 1
+      Height = 143
+      Top = 1
+      Width = 621
+      Align = alLeft
+      Caption = 'Panel7'
+      ClientHeight = 143
+      ClientWidth = 621
+      TabOrder = 4
+      object CommandLine: TEdit
+        Left = 1
+        Height = 21
+        Top = 121
+        Width = 619
+        Align = alBottom
+        OnChange = CommandLineChange
+        OnKeyPress = CommandLineKeyPress
+        TabOrder = 0
+      end
+      object Log: TRichMemo
+        Left = 1
+        Height = 120
+        Top = 1
+        Width = 619
+        Align = alClient
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        HideSelection = False
+        Lines.Strings = (
+          ''
+        )
+        OnChange = LogChange
+        ParentFont = False
+        ReadOnly = True
+        ScrollBars = ssVertical
+        TabOrder = 1
+        ZoomFactor = 1
+      end
+    end
+  end
+  object ComPort: TComPort
+    BaudRate = br115200
+    Port = 'COM5'
+    Parity.Bits = prNone
+    StopBits = sbOneStopBit
+    DataBits = dbEight
+    Events = [evRxChar]
+    FlowControl.OutCTSFlow = False
+    FlowControl.OutDSRFlow = False
+    FlowControl.ControlDTR = dtrDisable
+    FlowControl.ControlRTS = rtsDisable
+    FlowControl.XonXoffOut = False
+    FlowControl.XonXoffIn = False
+    OnAfterOpen = ComPortAfterOpen
+    OnAfterClose = ComPortAfterClose
+    OnRxChar = ComPortRxChar
+    left = 312
+    top = 4
+  end
+  object MainMenu: TMainMenu
+    left = 448
+    top = 4
+    object File1: TMenuItem
+      Caption = '&File'
+      object Open1: TMenuItem
+        Caption = '&Open Parameters'
+        OnClick = Open1Click
+      end
+      object SaveParameters1: TMenuItem
+        Caption = '&Save Parameters'
+        OnClick = SaveParameters1Click
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Exit1: TMenuItem
+        Caption = '&E&xit'
+      end
+    end
+  end
+  object OpenDialog: TOpenDialog
+    DefaultExt = '.pset'
+    Filter = 'Servo settings (*.stm32servo)|*.stm32servo'
+    Options = [ofHideReadOnly, ofFileMustExist, ofCreatePrompt, ofEnableSizing]
+    left = 488
+    top = 4
+  end
+  object SaveDialog: TSaveDialog
+    DefaultExt = '.pset'
+    Filter = 'Servo settings (*.stm32servo)|*.stm32servo'
+    left = 528
+    top = 4
+  end
+end

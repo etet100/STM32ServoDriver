@@ -1,0 +1,97 @@
+object AboutBox: TAboutBox
+  Left = 310
+  Height = 176
+  Top = 188
+  Width = 303
+  HorzScrollBar.Page = 302
+  VertScrollBar.Page = 175
+  ActiveControl = OKButton
+  BorderStyle = bsDialog
+  Caption = 'About'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  object Panel1: TPanel
+    Left = 8
+    Height = 121
+    Top = 8
+    Width = 288
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    TabOrder = 0
+    object ProgramIcon: TImage
+      Left = 8
+      Height = 57
+      Top = 8
+      Width = 65
+      Center = True
+      Picture.Data = {
+        07544269746D617096010000424D960100000000000076000000280000001800
+        000018000000010004000000000020010000C40E0000C40E0000100000000000
+        0000000000000000800000800000008080008000000080008000808000008080
+        8000C0C0C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+        FF00888888888888888888888888888888888888888888888888888888888888
+        8888888888888888888888888888888888888888000000000000088888888880
+        7777777777777008888888807707070707077070888888807777777777777070
+        8888880770707070707077070888880777777777777777070888880000000000
+        0000000708888807777777777777770708888880777777777777777008888888
+        0777777777777777088888888000000000000000088888888888888000888888
+        8888888888888888000888888888888888888888800008888888888888888888
+        8800008888888888888888888888000888888888888888888888800088888888
+        8888888888888800888888888888888888888888888888888888888888888888
+        8888
+      }
+    end
+    object ProductName: TLabel
+      Left = 88
+      Height = 23
+      Top = 16
+      Width = 139
+      Caption = 'ComPort Library'
+      Color = clNone
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Height = -19
+      Font.Name = 'MS Serif'
+      ParentColor = False
+    end
+    object Version: TLabel
+      Left = 88
+      Height = 14
+      Top = 40
+      Width = 36
+      Caption = 'version'
+      Color = clNone
+      ParentColor = False
+    end
+    object Copyright: TLabel
+      Left = 8
+      Height = 14
+      Top = 80
+      Width = 194
+      Caption = 'by Dejan Crnila and others, 1998 - 2003'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label1: TLabel
+      Left = 8
+      Height = 14
+      Top = 96
+      Width = 195
+      Caption = 'See http://comport.sf.net/ for more info'
+      Color = clNone
+      ParentColor = False
+    end
+  end
+  object OKButton: TButton
+    Left = 112
+    Height = 25
+    Top = 136
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+  end
+end

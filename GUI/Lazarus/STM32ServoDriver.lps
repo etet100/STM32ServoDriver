@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="22">
+      <Unit0>
+        <Filename Value="STM32ServoDriver.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="18"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="576"/>
+        <CursorPos X="44" Y="604"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="globals.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="10" Y="60"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="config.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="16"/>
+        <CursorPos X="79" Y="53"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="settingsmanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SettingsManager"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="137"/>
+        <CursorPos Y="159"/>
+        <UsageCount Value="155"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="chartframeunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ChartFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="31" Y="10"/>
+        <UsageCount Value="155"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="statusframeunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="StatusFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="StatusFrameUnit"/>
+        <CursorPos Y="49"/>
+        <UsageCount Value="155"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="tuningframeunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TuningFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3"/>
+        <CursorPos X="21" Y="16"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="ComPort\CPort.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1916"/>
+        <CursorPos X="62" Y="1932"/>
+        <UsageCount Value="54"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="AdvSpinEdit\advspinedit.pas"/>
+        <UnitName Value="AdvSpinEdit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos X="35" Y="52"/>
+        <UsageCount Value="69"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="main.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="69"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\Programy\Lazarus\components\lazcontrols\spinex.pp"/>
+        <UnitName Value="SpinEx"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="73"/>
+        <CursorPos X="14" Y="239"/>
+        <UsageCount Value="79"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\Programy\Lazarus\components\tachart\tagraph.pas"/>
+        <UnitName Value="TAGraph"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1585"/>
+        <CursorPos X="18" Y="1613"/>
+        <UsageCount Value="47"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\Programy\Lazarus\components\tachart\tachartutils.pas"/>
+        <UnitName Value="TAChartUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="871"/>
+        <CursorPos Y="893"/>
+        <UsageCount Value="88"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\Programy\Lazarus\components\tachart\tacustomseries.pas"/>
+        <UnitName Value="TACustomSeries"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="193"/>
+        <CursorPos X="34" Y="221"/>
+        <UsageCount Value="19"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\Programy\Lazarus\components\tachart\taseries.pas"/>
+        <UnitName Value="TASeries"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="234"/>
+        <CursorPos X="34" Y="262"/>
+        <UsageCount Value="19"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\Programy\Lazarus\components\tachart\tasources.pas"/>
+        <UnitName Value="TASources"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="518"/>
+        <CursorPos X="37" Y="428"/>
+        <UsageCount Value="19"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\Programy\Lazarus\components\lazcontrols\spinex.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="77"/>
+        <CursorPos Y="100"/>
+        <UsageCount Value="32"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\Programy\Lazarus\lcl\include\wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7421"/>
+        <CursorPos Y="7444"/>
+        <UsageCount Value="32"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\Programy\Lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3525"/>
+        <CursorPos Y="3552"/>
+        <UsageCount Value="32"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\Programy\Lazarus\lcl\groupededit.pp"/>
+        <UnitName Value="GroupedEdit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="593"/>
+        <CursorPos Y="615"/>
+        <UsageCount Value="32"/>
+      </Unit21>
+    </Units>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="settingsmanager.pas"/>
+        <Caret Line="124" Column="67" TopLine="103"/>
+      </Position1>
+      <Position2>
+        <Filename Value="main.pas"/>
+        <Caret Line="7" Column="49"/>
+      </Position2>
+      <Position3>
+        <Filename Value="main.pas"/>
+        <Caret Line="149" Column="14" TopLine="126"/>
+      </Position3>
+      <Position4>
+        <Filename Value="main.pas"/>
+        <Caret Line="150" Column="29" TopLine="126"/>
+      </Position4>
+      <Position5>
+        <Filename Value="main.pas"/>
+        <Caret Line="489" TopLine="486"/>
+      </Position5>
+      <Position6>
+        <Filename Value="main.pas"/>
+      </Position6>
+      <Position7>
+        <Filename Value="main.pas"/>
+        <Caret Line="150" Column="29" TopLine="114"/>
+      </Position7>
+      <Position8>
+        <Filename Value="main.pas"/>
+      </Position8>
+      <Position9>
+        <Filename Value="main.pas"/>
+        <Caret Line="156" TopLine="114"/>
+      </Position9>
+      <Position10>
+        <Filename Value="main.pas"/>
+        <Caret Line="455" TopLine="455"/>
+      </Position10>
+      <Position11>
+        <Filename Value="main.pas"/>
+        <Caret Line="525" TopLine="504"/>
+      </Position11>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

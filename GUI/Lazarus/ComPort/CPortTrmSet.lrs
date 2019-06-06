@@ -1,0 +1,52 @@
+{ Ceci est un fichier ressource généré automatiquement par Lazarus }
+
+LazarusResources.Add('TComTrmSetForm','FORMDATA',[
+  'TPF0'#14'TComTrmSetForm'#13'ComTrmSetForm'#4'Left'#3'8'#1#6'Height'#3'?'#1#3
+  +'Top'#2'b'#5'Width'#3''''#1#18'HorzScrollBar.Page'#3'&'#1#18'VertScrollBar.P'
+  +'age'#3'>'#1#13'ActiveControl'#7#9'CheckBox1'#11'BorderStyle'#7#8'bsDialog'#7
+  +'Caption'#6#5'Setup'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Serif'#8
+  +'OnCreate'#7#10'FormCreate'#8'Position'#7#14'poScreenCenter'#0#9'TGroupBox'#9
+  +'GroupBox1'#6'Height'#2'h'#5'Width'#3''''#1#5'Align'#7#5'alTop'#7'Caption'#6
+  +#16' ASCII Settings '#8'TabOrder'#2#0#0#9'TCheckBox'#9'CheckBox1'#4'Left'#2#8
+  +#6'Height'#2#17#3'Top'#2#252#5'Width'#3#207#0#7'Caption'#6#30'Echo typed cha'
+  +'rachters locally'#8'TabOrder'#2#0#0#0#9'TCheckBox'#9'CheckBox2'#4'Left'#2#8
+  +#6'Height'#2#17#3'Top'#2#12#5'Width'#3#231#0#7'Caption'#6'$Send line feeds w'
+  +'ith carriage return'#8'TabOrder'#2#1#0#0#9'TCheckBox'#9'CheckBox3'#4'Left'#2
+  +#8#6'Height'#2#17#3'Top'#2#28#5'Width'#3#243#0#7'Caption'#6'%Wrap lines that'
+  +' exceed terminal width'#8'TabOrder'#2#2#0#0#9'TCheckBox'#9'CheckBox4'#4'Lef'
+  +'t'#2#8#6'Height'#2#17#3'Top'#2','#5'Width'#3#223#0#7'Caption'#6'"Force inco'
+  +'ming data to 7 bit ASCII'#8'TabOrder'#2#3#0#0#9'TCheckBox'#9'CheckBox5'#4'L'
+  +'eft'#2#8#6'Height'#2#17#3'Top'#2'<'#5'Width'#3'%'#1#7'Caption'#6'-Append li'
+  +'ne feeds to incoming carriage return'#8'TabOrder'#2#4#0#0#0#9'TGroupBox'#9
+  +'GroupBox2'#6'Height'#3#168#0#3'Top'#2'h'#5'Width'#3''''#1#5'Align'#7#5'alTo'
+  +'p'#7'Caption'#6#19' Terminal Settings '#8'TabOrder'#2#1#0#6'TLabel'#6'Label'
+  +'1'#4'Left'#2#8#6'Height'#2#18#3'Top'#2#24#5'Width'#2'"'#7'Caption'#6#5'Care'
+  +'t'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2
+  +#8#6'Height'#2#18#3'Top'#2'D'#5'Width'#2'6'#7'Caption'#6#7'Columns'#5'Color'
+  +#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Label4'#4'Left'#3#158#0#6'Hei'
+  +'ght'#2#18#3'Top'#2'D'#5'Width'#2'"'#7'Caption'#6#4'Rows'#5'Color'#7#6'clNon'
+  +'e'#11'ParentColor'#8#0#0#6'TLabel'#6'Label2'#4'Left'#2#8#6'Height'#2#18#3'T'
+  +'op'#2'0'#5'Width'#2'='#7'Caption'#6#9'Emulation'#5'Color'#7#6'clNone'#11'Pa'
+  +'rentColor'#8#0#0#6'TLabel'#6'Label5'#4'Left'#2#8#6'Height'#2#18#3'Top'#2'`'
+  +#5'Width'#2'J'#7'Caption'#6#11'Cursor keys'#5'Color'#7#6'clNone'#11'ParentCo'
+  +'lor'#8#0#0#9'TComboBox'#9'ComboBox1'#4'Left'#2'H'#6'Height'#2#24#3'Top'#2#16
+  +#5'Width'#2'a'#16'AutoCompleteText'#11#22'cbactEndOfLineComplete'#20'cbactSe'
+  +'archAscending'#0#10'ItemHeight'#2#13#13'Items.Strings'#1#6#5'Block'#6#9'Und'
+  +'erline'#0#9'MaxLength'#2#0#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#0#0#0
+  +#9'TComboBox'#9'ComboBox2'#4'Left'#2'H'#6'Height'#2#24#3'Top'#2'('#5'Width'#2
+  +'a'#16'AutoCompleteText'#11#22'cbactEndOfLineComplete'#20'cbactSearchAscendi'
+  +'ng'#0#10'ItemHeight'#2#13#13'Items.Strings'#1#6#10'ANSI/VT100'#6#4'VT52'#6#4
+  +'None'#0#9'MaxLength'#2#0#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#1#0#0#9
+  +'TComboBox'#9'ComboBox3'#4'Left'#2'^'#6'Height'#2#24#3'Top'#2'`'#5'Width'#3
+  +#161#0#16'AutoCompleteText'#11#22'cbactEndOfLineComplete'#20'cbactSearchAsce'
+  +'nding'#0#10'ItemHeight'#2#13#13'Items.Strings'#1#6#20'Act as terminal keys'
+  +#6#19'Act as windows keys'#0#9'MaxLength'#2#0#5'Style'#7#14'csDropDownList'#8
+  +'TabOrder'#2#2#0#0#5'TEdit'#5'Edit1'#4'Left'#2'H'#6'Height'#2#21#3'Top'#2'@'
+  +#5'Width'#2'1'#8'TabOrder'#2#3#0#0#5'TEdit'#5'Edit2'#4'Left'#3#206#0#6'Heigh'
+  +'t'#2#21#3'Top'#2'@'#5'Width'#2'1'#8'TabOrder'#2#4#0#0#0#7'TButton'#7'Button'
+  +'1'#4'Left'#3#128#0#6'Height'#2#25#3'Top'#3#24#1#5'Width'#2'K'#25'BorderSpac'
+  +'ing.InnerBorder'#2#4#7'Caption'#6#2'OK'#7'Default'#9#11'ModalResult'#2#1#8
+  +'TabOrder'#2#2#0#0#7'TButton'#7'Button2'#4'Left'#3#208#0#6'Height'#2#25#3'To'
+  +'p'#3#24#1#5'Width'#2'K'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#6'Ca'
+  +'ncel'#11'ModalResult'#2#2#8'TabOrder'#2#3#0#0#0
+]);

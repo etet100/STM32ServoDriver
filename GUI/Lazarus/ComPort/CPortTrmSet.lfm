@@ -1,0 +1,196 @@
+object ComTrmSetForm: TComTrmSetForm
+  Left = 312
+  Height = 319
+  Top = 98
+  Width = 295
+  HorzScrollBar.Page = 294
+  VertScrollBar.Page = 318
+  ActiveControl = CheckBox1
+  BorderStyle = bsDialog
+  Caption = 'Setup'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  object GroupBox1: TGroupBox
+    Height = 104
+    Width = 295
+    Align = alTop
+    Caption = ' ASCII Settings '
+    TabOrder = 0
+    object CheckBox1: TCheckBox
+      Left = 8
+      Height = 17
+      Top = -4
+      Width = 207
+      Caption = 'Echo typed charachters locally'
+      TabOrder = 0
+    end
+    object CheckBox2: TCheckBox
+      Left = 8
+      Height = 17
+      Top = 12
+      Width = 231
+      Caption = 'Send line feeds with carriage return'
+      TabOrder = 1
+    end
+    object CheckBox3: TCheckBox
+      Left = 8
+      Height = 17
+      Top = 28
+      Width = 243
+      Caption = 'Wrap lines that exceed terminal width'
+      TabOrder = 2
+    end
+    object CheckBox4: TCheckBox
+      Left = 8
+      Height = 17
+      Top = 44
+      Width = 223
+      Caption = 'Force incoming data to 7 bit ASCII'
+      TabOrder = 3
+    end
+    object CheckBox5: TCheckBox
+      Left = 8
+      Height = 17
+      Top = 60
+      Width = 293
+      Caption = 'Append line feeds to incoming carriage return'
+      TabOrder = 4
+    end
+  end
+  object GroupBox2: TGroupBox
+    Height = 168
+    Top = 104
+    Width = 295
+    Align = alTop
+    Caption = ' Terminal Settings '
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 8
+      Height = 18
+      Top = 24
+      Width = 34
+      Caption = 'Caret'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 18
+      Top = 68
+      Width = 54
+      Caption = 'Columns'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 158
+      Height = 18
+      Top = 68
+      Width = 34
+      Caption = 'Rows'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 8
+      Height = 18
+      Top = 48
+      Width = 61
+      Caption = 'Emulation'
+      Color = clNone
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 8
+      Height = 18
+      Top = 96
+      Width = 74
+      Caption = 'Cursor keys'
+      Color = clNone
+      ParentColor = False
+    end
+    object ComboBox1: TComboBox
+      Left = 72
+      Height = 24
+      Top = 16
+      Width = 97
+      AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+      ItemHeight = 13
+      Items.Strings = (
+        'Block'
+        'Underline'
+      )
+      MaxLength = 0
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object ComboBox2: TComboBox
+      Left = 72
+      Height = 24
+      Top = 40
+      Width = 97
+      AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+      ItemHeight = 13
+      Items.Strings = (
+        'ANSI/VT100'
+        'VT52'
+        'None'
+      )
+      MaxLength = 0
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object ComboBox3: TComboBox
+      Left = 94
+      Height = 24
+      Top = 96
+      Width = 161
+      AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+      ItemHeight = 13
+      Items.Strings = (
+        'Act as terminal keys'
+        'Act as windows keys'
+      )
+      MaxLength = 0
+      Style = csDropDownList
+      TabOrder = 2
+    end
+    object Edit1: TEdit
+      Left = 72
+      Height = 21
+      Top = 64
+      Width = 49
+      TabOrder = 3
+    end
+    object Edit2: TEdit
+      Left = 206
+      Height = 21
+      Top = 64
+      Width = 49
+      TabOrder = 4
+    end
+  end
+  object Button1: TButton
+    Left = 128
+    Height = 25
+    Top = 280
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 208
+    Height = 25
+    Top = 280
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 3
+  end
+end
