@@ -1,4 +1,5 @@
 # STM32ServoDriver
+
 STM32F303 based Brushless DC Servo Driver.
 
 ## Servo Manager
@@ -13,6 +14,6 @@ STM32F303 based Brushless DC Servo Driver.
 
 #### STM32F303CCT6
 
-256kB Flash, 40kB RAM, FPu
+256kB Flash, 40kB RAM, FPU, USB
 
 ![STM32F303CCT6](/Images/Hardware2.jpg)
